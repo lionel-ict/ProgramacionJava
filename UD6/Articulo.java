@@ -4,17 +4,17 @@ public class Articulo {
     
     // ATRIBUTOS
 
-    private String nombre;
+    private final String nombre;
     private double precio;
-    private int iva;
     private int cuantosHay;
+
+    public static int iva = 21;
 
     // CONTRUCTORES
 
-    public Articulo(String n, double p, int i, int c){
+    public Articulo(String n, double p, int c){
         this.nombre = n;
         this.precio = p;
-        this.iva = i;
         this.cuantosHay = c;
     }
 
@@ -24,9 +24,7 @@ public class Articulo {
         return nombre;
     }
 
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
-    }
+    
 
     public double getPrecio() {
         return precio;
@@ -34,7 +32,7 @@ public class Articulo {
 
     public void setPrecio(double precio) {
         if (precio <= 0)
-            System.out.println("ERROR: El precio no puede ser negativo");
+            System.out.println("ERROR: El precio no puede ser negativo ni cero");
         else
             this.precio = precio;
     }
@@ -57,7 +55,7 @@ public class Articulo {
     // OTROS MÉTODOS
 
     public String toString() {
-        return ("Nombre: " + nombre + " Precio: " + precio + " Cuantos: " + cuantosHay);
+        return ("Nombre: " + nombre + " Precio: " + precio + " IVA: " + iva + " Cuantos: " + cuantosHay);
     }
 
     // Vendemos una cantidad de este artículo.
