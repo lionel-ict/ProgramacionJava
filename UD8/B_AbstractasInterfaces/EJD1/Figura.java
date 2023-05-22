@@ -1,9 +1,6 @@
-package UD8.B_AbstractasInterfaces.EJB1;
+package UD8.B_AbstractasInterfaces.EJD1;
 
 public abstract class Figura {
-
-    public Figura(){
-    }
 
     public abstract double area();
 

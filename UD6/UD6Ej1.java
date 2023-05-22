@@ -2,8 +2,6 @@ package UD6;
 
 import java.util.ArrayList;
 
-import javax.print.event.PrintJobListener;
-
 public class UD6Ej1 {
 
     public static void main(String[] args) {

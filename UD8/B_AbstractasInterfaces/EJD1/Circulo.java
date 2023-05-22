@@ -1,4 +1,4 @@
-package UD8.B_AbstractasInterfaces.EJB1;
+package UD8.B_AbstractasInterfaces.EJD1;
 
 public class Circulo extends Figura {
     
