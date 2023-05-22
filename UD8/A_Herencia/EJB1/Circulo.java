@@ -2,10 +2,16 @@ package UD8.A_Herencia.EJB1;
 
 public class Circulo extends Figura {
     
-    figuras.add(new Circulo(10)); // Radio=10
-    figuras.add(new Cuadrado(10)); // Lado=10
-    figuras.add(new Triangulo(10, 5)); // Base=10, Altura=5;            figuras.add(new Circulo(10)); // Radio=10
-    figuras.add(new Cuadrado(10)); // Lado=10
-    figuras.add(new Triangulo(10, 5)); // Base=10, Altura=5;
+    double radio;
+
+    public Circulo(double radio) throws Exception {
+        if (radio <= 0 )
+            throw new Exception("El radio no puede ser <= 0");
+        this.radio = radio;
+    }
+
+    public double area(){
+        return Math.PI * radio * radio;
+    }
 
 }
