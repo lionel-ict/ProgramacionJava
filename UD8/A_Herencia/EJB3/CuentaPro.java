@@ -1,4 +1,4 @@
-package UD8.EJB3;
+package UD8.A_Herencia.EJB3;
 
 public class CuentaPro extends CuentaCorriente {
 

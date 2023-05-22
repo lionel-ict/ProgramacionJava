@@ -1,4 +1,4 @@
-package UD8.Ejemplos;
+package UD8.A_Herencia.Ejemplos;
 
 public class Persona {
 
