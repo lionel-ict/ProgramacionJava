@@ -16,15 +16,16 @@ public class MainArticulos {
         al.add(a2);
         al.add(a3);
 
+        int suma = 0;
         for (int i = 0; i < al.size(); i++) {
             Articulo a = al.get(i);
-            if (a.getNombre().contains("Tele"))
-                System.out.println(a);
-            
+            suma += a.getPrecio();
         }
 
+        System.out.println("Total: " + suma);
 
-        /* 
+
+        /* public void setPrecio(double precio) throws Exception {
         System.out.println(a1);
         System.out.println(a2);
         System.out.println(a3);
@@ -40,7 +41,10 @@ public class MainArticulos {
         System.out.println(a3);
         
         Articulo.iva = 100;
-        
+        if (c <= 0)
+            System.err.println("La cantidad no puede ser negativa ni cero");
+        else
+            this.cuantosHay = c;
         System.out.println(a1);
         System.out.println(a2);
         System.out.println(a3);
