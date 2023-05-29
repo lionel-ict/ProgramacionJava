@@ -6,7 +6,7 @@ public class ProgramaMascotas {
 
     public static void main(String[] args) {
 
-        ArrayList<Mascota> mascotas = new ArrayList();
+        ArrayList<Mascota> mascotas = new ArrayList<Mascota>();
 
         mascotas.add(new Perro("Pancho", 3, false));
         mascotas.add(new Perro("Pulgas", 3, true));
